@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Life Game</title>
+    {% block scripts %}
+        <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" type="text/css"/>
+    {% endblock %}
+</head>
+<body>
+
+{% block content %}
+    <div class="content">
+        {% block app_content %}
+
+        {% endblock %}
+    </div>
+{% endblock %}
+
+</body>
+</html>
